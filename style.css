@@ -1,12 +1,14 @@
 /* 🎨 Palet Warna */
 :root {
-  --bg: #F5F5F5;
+  --bg: #FFFBF0;
   --primary: #EBA4A5;
-  --secondary: #D86B80;
-  --accent: #BF4060;
-  --dark: #702031;
-  --text: #333333;
-  --white: #ffffff;
+  --secondary: #496fa56d;
+  --accent: #2E476B;
+  --dark: #052f69;
+  --text: #000000;
+  --blue: #2E476B;
+  --white: #FFFFFF;
+
 }
 
 /* Reset */
@@ -25,7 +27,7 @@ body {
 
 /* Navbar */
 header {
-  background-color: var(--white);
+  background-color: var(--blue);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 15px 50px;
   position: sticky;
@@ -47,13 +49,13 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 500;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: var(--text);
 }
 
 /* Hero Section */
@@ -64,8 +66,8 @@ nav a:hover {
   gap: 40px;
   flex-wrap: wrap;
   padding: 100px 10%;
-  background: linear-gradient(to right, #EBA4A5, #D86B80);
-  color: var(--white);
+  background: var(--bg);
+  color: var(--text);
 }
 
 .hero-text {
@@ -86,7 +88,7 @@ nav a:hover {
 .hero-img img {
   width: 350px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
 }
 
 /* CTA Button */
@@ -101,22 +103,25 @@ nav a:hover {
 
 .cta-btn:hover {
   background-color: var(--dark);
+  transform: translateY(-5px);
+
 }
 
 /* Section */
 section {
   padding: 70px 10%;
   text-align: center;
+  background: var(--secondary);
 }
 
 section h2 {
-  color: var(--accent);
+  color: var(--text);
   margin-bottom: 15px;
 }
 
 .section-sub {
   margin-bottom: 40px;
-  color: #666;
+  color: #000000;
 }
 
 /* Service & Fitur */
@@ -156,6 +161,9 @@ section h2 {
   width: 260px;
 }
 
+.testi-box:hover {
+  transform: translateY(-5px);
+}
 /* Tentang */
 .about {
   max-width: 800px;
@@ -196,7 +204,7 @@ section h2 {
 
 /* Footer */
 footer {
-  background-color: var(--dark);
+  background-color: var(--blue);
   color: var(--white);
   text-align: center;
   padding: 20px;
